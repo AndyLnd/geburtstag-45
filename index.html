@@ -33,7 +33,7 @@
   .poster {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto;
     min-height: 100vh;
     padding: clamp(12px, 4vw, 28px);
     gap: 0;
@@ -144,7 +144,7 @@
     transform: rotate(-4deg);
     letter-spacing: -0.02em;
     line-height: 1;
-    margin-top: 4%;
+    margin: 0;
     text-shadow: 4px 4px 0 var(--acid);
   }
 
@@ -155,25 +155,12 @@
     font-size: clamp(1.3rem, 3.5vw, 2rem);
     align-self: end;
     justify-self: center;
-    margin-bottom: 0;
+    margin: 0;
     transform: rotate(2deg);
     background: var(--ink);
     color: var(--bg);
     padding: 6px 22px;
     width: fit-content;
-  }
-
-  /* Wir freuen uns auf euch */
-  .chunk-vibe {
-    grid-column: 1 / 4;
-    grid-row: 5 / 6;
-    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
-    align-self: start;
-    justify-self: center;
-    margin-top: 0;
-    transform: rotate(-1.5deg);
-    color: var(--ink);
-    letter-spacing: -0.01em;
   }
 
   /* GIF */
@@ -182,9 +169,24 @@
     grid-row: 4 / 5;
     align-self: start;
     justify-self: center;
-    margin-top: -4%;
+    margin: 0;
     z-index: 5;
   }
+
+  /* Vibe */
+  .chunk-vibe {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+    align-self: start;
+    justify-self: center;
+    margin: 0;
+    transform: rotate(-1.5deg);
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  /* party-gif image styles */
   .party-gif {
     width: 120px;
     height: auto;
