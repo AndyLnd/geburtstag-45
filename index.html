@@ -166,15 +166,35 @@
   /* Wir freuen uns auf euch */
   .chunk-vibe {
     grid-column: 1 / 4;
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
     font-size: clamp(1.1rem, 2.5vw, 1.6rem);
     align-self: start;
     justify-self: center;
-    margin-top: 6%;
+    margin-top: 2%;
     transform: rotate(-1.5deg);
     color: var(--ink);
     letter-spacing: -0.01em;
   }
+
+  /* GIF */
+  .chunk-gif {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    align-self: end;
+    justify-self: center;
+    margin-bottom: 4%;
+    z-index: 5;
+  }
+  .party-gif {
+    width: 140px;
+    height: auto;
+    display: block;
+    image-rendering: auto;
+    border: 3px solid var(--ink);
+    transform: rotate(2deg);
+    transition: transform 0.3s;
+  }
+  .party-gif:hover { transform: rotate(0deg) scale(1.05); }
 
   /* scribble lines */
   .scribble {
@@ -274,6 +294,15 @@
       transform: rotate(1.5deg);
       align-self: center;
     }
+    .chunk-gif {
+      margin: 14px 0 0;
+      align-self: center;
+      order: 0;
+    }
+    .chunk-gif .party-gif {
+      width: 100px;
+      border-width: 2px;
+    }
     .chunk-vibe {
       font-size: 0.95rem;
       margin: 14px 0 0;
@@ -300,7 +329,12 @@
   <div class="chunk chunk-feiert">feiert<br>Geburtstag</div>
   <div class="chunk chunk-date">23. Mai</div>
   <div class="chunk chunk-time">16 Uhr &nbsp;·&nbsp; bei mir</div>
-  <div class="chunk chunk-vibe">Wir freuen uns auf euch.</div>
+
+  <div class="chunk chunk-gif">
+    <img src="burzdei.gif" alt="Burzdei" class="party-gif">
+  </div>
+
+  <div class="chunk chunk-vibe">Sagt Bescheid, ob ihr dabei seid.</div>
 
 </div>
 
