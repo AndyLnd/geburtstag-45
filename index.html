@@ -114,12 +114,13 @@
     color: var(--ink);
     transform: rotate(-3deg);
     background: var(--acid);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 4px 16px 10px;
+    padding: 4px 16px;
     line-height: 1;
   }
+  .chunk-andy span { transform: translateY(2px); }
 
   /* feiert Geburtstag */
   .chunk-feiert {
@@ -148,12 +149,13 @@
     transform: rotate(2deg);
     background: var(--ink);
     color: var(--bg);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 4px 22px 10px;
+    padding: 4px 22px;
     line-height: 1;
   }
+  .chunk-time span { transform: translateY(2px); }
 
   /* GIF */
   .chunk-gif {
@@ -312,11 +314,11 @@
   </div>
 
   <div class="andy-row">
-    <div class="chunk chunk-andy">ANDY</div>
+    <div class="chunk chunk-andy"><span>ANDY</span></div>
     <div class="chunk chunk-feiert">feiert<br>Geburtstag</div>
   </div>
   <div class="chunk chunk-date">23. Mai</div>
-  <div class="chunk chunk-time">16 Uhr &nbsp;·&nbsp; bei mir</div>
+  <div class="chunk chunk-time"><span>16 Uhr &nbsp;·&nbsp; bei mir</span></div>
 
   <div class="chunk chunk-gif">
     <img src="burzdei.gif" alt="Burzdei" class="party-gif">
